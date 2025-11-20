@@ -9,7 +9,7 @@ The last QR code will always contain a land command.
 Grading will be done according to the given rubric.
 
 You are provided with:
-1) Skeleton code (optinal to use)
+1) Skeleton code (optinal to use).
 2) PDF of the April tags. 
-3) A encrypted, and plaintext list of all possible movement commands
+3) An encrypted, and plaintext list of all possible movement commands.
 4) Three Encrypted QR codes for you to verify the functinality of your code.
