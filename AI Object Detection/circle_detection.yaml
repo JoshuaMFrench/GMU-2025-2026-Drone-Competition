@@ -1,0 +1,6 @@
+path: C:\Users\conno\Python Files\Python Project\Work\Drone Competiton\Object Tracking\YOLO Files\V4 Detection\V4_YOLO_circle_detection
+train: train
+val: val
+
+nc: 9
+names: ["Green Circle", "Green Triangle", "Green Square", "Yellow Circle", "Yellow Triangle", "Yellow Square", "Purple Circle", "Purple Triangle", "Purple Square"]
