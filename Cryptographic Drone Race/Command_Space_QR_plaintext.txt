@@ -1,4 +1,4 @@
-The plaintext for the "Command_Space_QR.png" code is "{-1:['takeoff','move_forward 50','move_backward 50','move_left 50','move_right 50','move_up 50','move_down 50','rotate_clockwise 90','rotate_counter_clockwise 90','flip_forward','flip_back', 'land']}". These are all of the possible commands we plan to put into the course.
+The plaintext for the "Command_Space_QR.png" code is "{-1:['takeoff','move_forward 50','move_backward 50','move_left 50','move_right 50','move_up 50','move_down 50','rotate_clockwise 90','rotate_counter_clockwise 90','flip_forward','flip_back', 'land','rotate_counter_clockwise 360','rotate_clockwise 360']}". These are all of the possible commands we plan to put into the course.
 
 The key to the dictionary is the gate number, which MUST match the number of the gate the drone must go through. We may put multiple QR codes with incorrect gate numbers and legitimate commands per gate to ensure only the correct QR codes are operate on
 
