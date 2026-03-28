@@ -108,6 +108,10 @@ Grading will be done according to the provided rubric. Key areas include:
 
 ---
 
+## Video
+
+Here is our [video](https://www.youtube.com/watch?v=GVJd_MzyqwA) illustrating the drone doing the course, operating on only the correct encrypted QR codes associated with the Apriltag for the gate.
+
 ## Questions?
 
 Open an issue or reach out to the challenge organizers.
