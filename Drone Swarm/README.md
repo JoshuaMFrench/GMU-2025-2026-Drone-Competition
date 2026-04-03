@@ -46,6 +46,7 @@ By default, Tello drones broadcast their own Wi-Fi.
 2. Configure Static IP Addresses
 Use router DHCP reservations
 Assign each drone a fixed IP address
+
 -----------------------------------------------------
 
 3. Update Scripts
@@ -86,10 +87,15 @@ The second drone continuing normally
 The compromised drone executing attacker commands
 
 🧠 Scoring System
+
 Task	                                 Points
+
 Hack 1 drone	                         4
+
 Execute 1 command	                     +2
+
 Execute 2 commands	                   +4
+
 Hack both drones	                     up to 16 total
 
 ----------------------------------------------------------
