@@ -13,9 +13,7 @@ Inject malicious commands to take control
 This challenge is designed for students to explore real-world network vulnerabilities in IoT systems.
 
 🎯 Objectives
-
 Participants must:
-
 Successfully hijack at least one drone in the swarm
 Execute up to two attacker-controlled commands after takeover
 (Advanced) Repeat the attack on a second drone
@@ -27,7 +25,6 @@ Execute command injection attacks
 Observe real-time behavior of compromised IoT devices
 
 🧰 Requirements
-
 Hardware
 2x DJI Tello drones
 1x Router (shared network)
@@ -41,7 +38,6 @@ Provided scripts in this repository
 -----------------------------------------------------
 ⚙️ Setup - THIS WILL BE DONE FOR YOU AT GEORGE MASON
 1. Connect Drones to the Router (Station Mode)
-
 By default, Tello drones broadcast their own Wi-Fi.
 
 2. Configure Static IP Addresses
@@ -51,7 +47,6 @@ Assign each drone a fixed IP address
 
 3. Update Scripts
 Before running anything, configure:
-
 DRONE_IP = "192.168.X.X"
 DRONE_MAC = "XX:XX:XX:XX:XX:XX"
 ATTACKER_IP = "192.168.X.X"
@@ -63,7 +58,6 @@ Step 1 — Start the Swarm
 
 Run the swarm script
 Expected behavior:
-
 Drones take off
 Execute synchronized movements
 Land together
@@ -81,7 +75,6 @@ This sends attacker-controlled commands to the drone
 ✅ Success Criteria
 
 A successful attack will result in:
-
 One drone breaking from swarm behavior
 The second drone continuing normally
 The compromised drone executing attacker commands
