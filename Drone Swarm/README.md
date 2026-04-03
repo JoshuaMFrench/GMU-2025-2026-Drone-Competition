@@ -7,7 +7,9 @@ A hands-on cybersecurity challenge demonstrating how insecure IoT devices (DJI T
 This project simulates a drone swarm operating on a shared Wi-Fi network and demonstrates how a malicious actor can:
 
 Intercept communication using ARP spoofing (MITM attack)
+
 Isolate a drone from the swarm
+
 Inject malicious commands to take control
 
 This challenge is designed for students to explore real-world network vulnerabilities in IoT systems.
@@ -15,26 +17,37 @@ This challenge is designed for students to explore real-world network vulnerabil
 🎯 Objectives
 
 Participants must:
+
 Successfully hijack at least one drone in the swarm
+
 Execute up to two attacker-controlled commands after takeover
+
 (Advanced) Repeat the attack on a second drone
 
 🧠 Learning Outcomes
 
 Understand ARP spoofing and MITM attacks
+
 Analyze unsecured network communication
+
 Execute command injection attacks
+
 Observe real-time behavior of compromised IoT devices
 
 🧰 Requirements
 
 Hardware
+
 2x DJI Tello drones
+
 1x Router (shared network)
+
 1–2x Laptops (controller + attacker)
 
 Software
+
 Python 3.x
+
 djitellopy library
 Provided scripts in this repository
 
