@@ -131,6 +131,10 @@ Do not use these techniques on networks or devices you do not own or have explic
 ------------------------------------------------------------
 
 👤 Author
+
 Travis Hannam
+
 Cyber Security Engineering
+
 George Mason University
+
