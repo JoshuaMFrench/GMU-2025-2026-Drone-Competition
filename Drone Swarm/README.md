@@ -13,18 +13,21 @@ Inject malicious commands to take control
 This challenge is designed for students to explore real-world network vulnerabilities in IoT systems.
 
 🎯 Objectives
+
 Participants must:
 Successfully hijack at least one drone in the swarm
 Execute up to two attacker-controlled commands after takeover
 (Advanced) Repeat the attack on a second drone
 
 🧠 Learning Outcomes
+
 Understand ARP spoofing and MITM attacks
 Analyze unsecured network communication
 Execute command injection attacks
 Observe real-time behavior of compromised IoT devices
 
 🧰 Requirements
+
 Hardware
 2x DJI Tello drones
 1x Router (shared network)
@@ -46,6 +49,7 @@ Assign each drone a fixed IP address
 -----------------------------------------------------
 
 3. Update Scripts
+
 Before running anything, configure:
 DRONE_IP = "192.168.X.X"
 DRONE_MAC = "XX:XX:XX:XX:XX:XX"
@@ -54,6 +58,7 @@ ATTACKER_IP = "192.168.X.X"
 Incorrect values will cause the attack to fail
 
 🚀 Execution Flow
+
 Step 1 — Start the Swarm
 
 Run the swarm script
@@ -72,6 +77,7 @@ Step 3 — Inject Commands (Takeover)
 After spoofing is active run your spoofing commands.
 This sends attacker-controlled commands to the drone
 
+---------------------------------------------------------
 ✅ Success Criteria
 
 A successful attack will result in:
@@ -85,6 +91,7 @@ Hack 1 drone	                         4
 Execute 1 command	                     +2
 Execute 2 commands	                   +4
 Hack both drones	                     up to 16 total
+----------------------------------------------------------
 
 ⚠️ Known Issues
 Drones may not always connect reliably to the router
@@ -97,6 +104,8 @@ Verify IP/MAC addresses before attacking
 Timing is critical — launch attack during swarm execution
 If nothing happens, debug your network configuration
 
+-----------------------------------------------------------
+
 🧪 Example Attack Flow
 Swarm starts normally
 Attacker launches ARP spoofing
@@ -104,11 +113,15 @@ One drone stops responding to swarm commands
 Attacker injects new commands
 Drone follows attacker instead of controller
 
+------------------------------------------------------------
+
 🔐 Disclaimer
 
 This project is for educational purposes only.
 
 Do not use these techniques on networks or devices you do not own or have explicit permission to test.
+
+------------------------------------------------------------
 
 👤 Author
 Travis Hannam
