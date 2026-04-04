@@ -7,7 +7,7 @@ A computer vision challenge where your model must detect **shape color combinati
 ## Overview
 
 Build a vision pipeline that:
-- Detects **all shape color combinations** individually (e.g., red circle, blue triangle, green square)
+- Detects **all shape color combinations** individually (e.g., purple circle, yellow triangle, green square)
 - **Triggers drone movement** when a circle is detected
 - **Ignores** triangles and squares
 - Works in real time from a drone camera feed
