@@ -14,6 +14,8 @@ Inject malicious commands to take control
 
 This challenge is designed for students to explore real-world network vulnerabilities in IoT systems.
 
+Python script materials were sourced from Steven J Antzana - George Mason University
+
 🎯 Objectives
 
 Participants must:
