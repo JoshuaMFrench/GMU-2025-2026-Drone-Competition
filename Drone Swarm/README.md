@@ -16,7 +16,7 @@ This challenge is designed for students to explore real-world network vulnerabil
 
 💥💥💥
 
-Python script materials were sourced from Steven J Antezana - George Mason University
+Python script materials were sourced from Steven J Antezana - George Mason University - GitHub: ssjjaa42
 
 💥💥💥
 
