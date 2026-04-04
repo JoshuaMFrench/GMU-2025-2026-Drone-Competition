@@ -21,7 +21,7 @@ See the drone in action:
 | View | Link |
 |------|------|
 | Human-View (drone perspective) | [Watch on YouTube](https://youtube.com/shorts/lY-6Xi5-xPc?feature=share) |
-| Laptop-View | *(link coming soon)* |
+| Laptop-View | [Watch on YouTube](https://youtu.be/ZePnqAD64Dg) |
 
 The drone detects all shapes and logs/displays them, but **only moves** in response to circles.
 
