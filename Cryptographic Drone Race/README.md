@@ -19,10 +19,10 @@ The gates are arranged in a **U shape**. The drone starts at the open end of the
 ## Gate Structure
 
 Each gate consists of:
-- **Left side** — a numbered Apriltag indicating gate order
-- **Right side** — one or more encrypted QR codes
+- A numbered Apriltag indicating gate order (always on the **left** side)
+- One or more encrypted QR codes (may be on **either** side)
 
-If a gate has **multiple QR codes**, only one is legitimate. Your code must identify and use the correct one.
+If a gate has **multiple QR codes**, only **one** is legitimate. Your code must identify and use the correct one.
 
 ---
 
@@ -32,6 +32,8 @@ The course uses Apriltags from the **tag16h5** family, sized **125mm across the 
 
 - Tag reference: [https://chaitanyantr.github.io/apriltag.html](https://chaitanyantr.github.io/apriltag.html)
 - Make sure to use the correct size PDF when printing
+
+You may choose to use or not use the Apriltags, as they are just to navigate the drone to the center of the gate.
 
 ---
 
@@ -46,11 +48,27 @@ Each decrypted QR code will contain a Python dictionary in the following format:
 
 ```python
 {
-    gate_number: "movement_command"
+    gate_number: ["movement_command", "movement_command"}
 }
 ```
 
 Where `gate_number` is an integer denoting the order of that gate, and `movement_command` is a valid Tello instruction.
+
+Instructions are stored within an ordered list, starting from the first commmand to be executed. 
+
+Some commands have a number associated, which are formatted like following:
+
+```python
+    "movement_command number" <-- Delineated by a space character
+```
+
+Other commands do **not** have a number associated, which are formatted like following:
+
+```python
+    "movement_command"
+```
+
+Your code **must** be able to handle both cases. Please reference the [DJI Tello documentation](https://djitellopy.readthedocs.io/en/latest/tello/#djitellopy.tello.Tello.move_back) and our command space text file for any questions about the commands or command structure.
 
 ---
 
@@ -59,8 +77,8 @@ Where `gate_number` is an integer denoting the order of that gate, and `movement
 The drone should follow this loop for each gate:
 
 ```
-1. Detect the Apriltag to identify the upcoming gate number
-2. Scan and decode the QR code(s) on that gate
+1. Detect the Apriltag (or otherwise identify the gate) to identify the upcoming gate number
+2. Scan for the QR code(s) on that gate
 3. Decrypt the QR code(s) and identify the legitimate one
 4. Fly to the center of the gate
 5. Execute the movement command from the decrypted QR code
@@ -89,7 +107,7 @@ Use the plaintext and encrypted command files together to reverse-engineer the e
 1. Study the plaintext and encrypted command files to reverse the encryption algorithm
 2. Implement a decryption function and verify it against the three test QR codes
 3. Set up Apriltag detection to read gate order from the left side of each gate
-4. Set up QR code scanning for the right side of each gate
+4. Set up QR code scanning for each gate
 5. Integrate detection, decryption, and Tello movement commands into a single autonomous flight script
 6. Test on the ground before flying
 
@@ -103,8 +121,10 @@ Grading will be done according to the provided rubric. Key areas include:
 |----------|-------|
 | Correct gate ordering | Must follow Apriltag sequence starting from 0 |
 | Successful QR decryption | Must identify and decrypt the legitimate QR code per gate |
-| Correct movement execution | Drone must act on the command before proceeding |
+| Correct movement execution | Drone must act on the QR command(s) before proceeding |
 | Course completion | Drone must land via the final gate's land command |
+
+For more in-depth information about this challenge, please view our [competition description document](https://docs.google.com/document/d/1TKOaak7x9xW8TqyNmZzIPVmJ_aiLyp3A-kBdy1dTi-A/edit?usp=sharing) for a breakdown of the points and such.
 
 ---
 
