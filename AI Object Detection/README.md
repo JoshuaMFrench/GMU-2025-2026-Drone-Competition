@@ -1,4 +1,4 @@
-# Shape Detection Drone Controller
+# AI Object Detection Challenge
 
 A computer vision challenge where your model must detect **shape color combinations** and trigger drone movement **only on circles**, ignoring triangles and squares entirely.
 
@@ -9,7 +9,7 @@ A computer vision challenge where your model must detect **shape color combinati
 Build a vision pipeline that:
 - Detects **all shape color combinations** individually (e.g., purple circle, yellow triangle, green square)
 - **Triggers drone movement** when a circle is detected
-- **Ignores** triangles and squares
+- **Ignores** triangles and squares (no movement response when detecting these shapes, regardless of color)
 - Works in real time from a drone camera feed
 
 ---
@@ -29,7 +29,7 @@ The drone detects all shapes and logs/displays them, but **only moves** in respo
 
 ## Circle Response Behavior
 
-Each circle color maps to a specific sequence of drone movements. When a circle is detected, the drone must execute the full movement sequence before resuming detection. Each movement sequence will result in the drone ending roughly where it started.
+Each colored circle maps to a specific sequence of drone movements. When a circle is detected, the drone must execute the full movement sequence before resuming detection. Each movement sequence will result in the drone ending roughly where it started.
 
 | Circle Color | Movement Sequence |
 |--------------|-------------------|
@@ -37,7 +37,7 @@ Each circle color maps to a specific sequence of drone movements. When a circle 
 | Yellow | Forward, Back, Forward |
 | Purple | Right, Left, Right |
 
-Once **all three circle colors have been detected**, the drone executes a **flip**.
+Once **all three circle colors have been detected**, the drone executes a **flip** and then lands.
 
 ```
 on detect("green circle"):
@@ -79,7 +79,7 @@ You are **free to use any computer vision approach**, including but not limited 
 - Using **classical CV** techniques (e.g., OpenCV contour detection with color masking)
 - Any other detection framework you prefer
 
-The only hard requirement: **each shape color combination must be detected individually** (e.g., "red circle" and "blue circle" are distinct classes).
+The only hard requirement: **each shape color combination must be detected individually** (e.g., "purple circle" and "green circle" are distinct classes).
 
 ---
 
@@ -98,9 +98,11 @@ The only hard requirement: **each shape color combination must be detected indiv
 | Criteria | Notes |
 |----------|-------|
 | Detects all shape-color combinations | Required |
-| Correct movement sequence per circle color | Required |
+| Correct movement sequence per colored circle | Required |
 | Flip executed after all three circles detected | Required |
 | Drone ignores triangles and squares | Required |
+
+For more in-depth explanation and the exact grading criteria judges will use, please view the [competition description document](https://docs.google.com/document/d/1TKOaak7x9xW8TqyNmZzIPVmJ_aiLyp3A-kBdy1dTi-A/edit?usp=sharing).
 
 ---
 
