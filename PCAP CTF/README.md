@@ -20,3 +20,7 @@ A PCAP file is a recording of raw network traffic. It stores every packet that p
  
 **What is Wireshark?**
 Wireshark is a free, open-source network protocol analyzer. It lets you inspect packet contents, filter by protocol, follow data streams, and export reassembled objects (such as files transmitted over HTTP, RTP streams, or raw TCP data) from a capture.
+
+## Challenge Logic
+
+All teams will be provided a **new** PCAP file with a **different** flag. Teams must be the first one to illustrate the proper video feed, complete with the flag and QR code clearly visible. The first team to do this will get 8 points.
