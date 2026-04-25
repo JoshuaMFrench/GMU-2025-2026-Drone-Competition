@@ -1,0 +1,33 @@
+CCI Drone Competition - Swarm Organization - IPs and MACs
+
+MARC Router 1:
+	SSID: CCI_Tello_Swarm1
+	PW: CYSECyRangeNAS
+
+	Drone 1: FE63EE
+	Static IP: 192.168.0.170
+	MAC: 34:D2:62:FE:63:EE
+	Drone 2: FE2BB6
+
+	Static IP: 192.168.0.171
+	MAC: 34:D2:62:FE:2B:B6
+
+	Controller
+	IP: 192.168.0.160
+	MAC: 28-C5-D2-06-8E-1B
+
+MARC Router 2:
+	SSID: CCI_Tello_Swarm2
+	PW: CYSECyRangeNAS
+	
+	Drone 1: FE690D
+	Static IP: 192.168.0.172
+	MAC: 34:D2:62:FE:69:0D
+
+	Drone 2: FE2CC5
+	Static IP: 192.168.0.173
+	MAC: 34:D2:62:FE:2C:C5
+
+	Controller
+	IP: 192.168.0.161
+	MAC: E4-1F-D5-C8-9B-28
